@@ -3,342 +3,565 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
-  <meta name="theme-color" content="#f5f1e9">
-  <meta name="description" content="Lady Dianne Osing — administrative support, appointment setting, customer experience, and CRM coordination.">
-  <title>Lady Dianne Osing | Professional Portfolio</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#f5f3eb">
+  <meta name="description" content="Dianne Osing's professional portfolio in virtual assistance, administrative support, appointment setting, customer service, and CRM management.">
+
+  <title>Dianne Osing | Virtual Assistant</title>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,500;0,600;1,400;1,500&display=swap" rel="stylesheet">
+
   <link rel="stylesheet" href="styles.css">
 </head>
+
 <body>
-  <header class="site-header">
-    <a class="wordmark" href="#home">DO<span>.</span></a>
-    <nav class="main-nav" aria-label="Main navigation">
-      <a href="#about">About</a>
-      <a href="#expertise">Expertise</a>
-      <a href="#experience">Experience</a>
-      <a href="#samples">Work Samples</a>
-      <a class="nav-contact" href="#contact">Let's connect ↗</a>
+  <header class="header" id="header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a href="#home" class="logo">
+        <span class="logo-mark">D.</span>
+        <span class="logo-text">DIANNE OSING<small>VIRTUAL ASSISTANT</small></span>
+      </a>
+
+      <button class="menu-toggle" id="menu-toggle" aria-label="Open navigation menu" aria-expanded="false" aria-controls="nav-links">
+        <span></span>
+        <span></span>
+      </button>
+
+      <div class="nav-links" id="nav-links">
+        <a href="#about">About</a>
+        <a href="#expertise">Expertise</a>
+        <a href="#experience">Experience</a>
+        <a href="#education">Education</a>
+        <a href="#contact" class="nav-cta">Let's Connect <span>↗</span></a>
+      </div>
     </nav>
-    <button class="menu-toggle" aria-label="Open navigation" aria-expanded="false" aria-controls="mobile-nav">
-      <span></span><span></span>
-    </button>
   </header>
 
-  <nav class="mobile-nav" id="mobile-nav" aria-label="Mobile navigation">
-    <a href="#about">About</a>
-    <a href="#expertise">Expertise</a>
-    <a href="#experience">Experience</a>
-    <a href="#samples">Work Samples</a>
-    <a href="#contact">Let's connect ↗</a>
-  </nav>
+  <main>
+    <!-- HERO -->
+    <section class="hero container" id="home">
+      <div class="hero-content reveal">
+        <p class="eyebrow"><span class="status-dot"></span> OPEN TO REMOTE OPPORTUNITIES</p>
 
-  <main id="home">
-    <section class="hero section-wrap">
-      <div class="hero-copy reveal">
-        <p class="eyebrow"><span></span> VIRTUAL ASSISTANCE · OPERATIONS · CLIENT SUPPORT</p>
-        <h1>Thoughtful support.<br><em>Seamless operations.</em></h1>
+        <h1>Organized support.<br>Meaningful <em>results.</em></h1>
+
         <p class="hero-description">
-          I'm Lady Dianne Osing, a client-focused support professional who brings structure to busy workflows through administrative coordination, appointment setting, CRM management, and customer care.
+          Hi, I'm Dianne — a Virtual Assistant and Administrative Support professional who helps businesses stay organized, communicate with clients, and keep daily operations running smoothly.
         </p>
-        <div class="hero-actions">
-          <a class="button button-dark" href="#experience">Explore my experience <span>↘</span></a>
-          <a class="text-link" href="mailto:osingladydianne@gmail.com">Email me ↗</a>
+
+        <div class="hero-buttons">
+          <a href="#experience" class="button button-primary">Explore My Experience <span>↘</span></a>
+          <a href="#contact" class="button button-outline">Get in Touch <span>↗</span></a>
         </div>
-        <div class="hero-meta">
-          <span class="availability-dot"></span>
-          <span>Open to remote opportunities</span>
-          <span class="meta-divider">/</span>
-          <span>Based in the Philippines</span>
+
+        <div class="hero-facts">
+          <div>
+            <strong>Admin</strong>
+            <span>Organization</span>
+          </div>
+          <div>
+            <strong>Client</strong>
+            <span>Communication</span>
+          </div>
+          <div>
+            <strong>CRM</strong>
+            <span>Management</span>
+          </div>
         </div>
       </div>
 
-      <div class="hero-visual reveal delay-1">
+      <div class="hero-visual reveal">
+        <div class="portrait-backdrop"></div>
         <div class="portrait-frame">
-          <div class="portrait-image">
-            <img src="Elegant%20Studio%20Graduation%20Portrait.png" alt="Graduation portrait of Lady Dianne Osing">
-          </div>
-          <div class="portrait-bottom">
-            <div>
-              <span class="portrait-label">MEET YOUR NEXT</span>
-              <strong>Reliable right hand.</strong>
-            </div>
-            <span class="portrait-monogram">D.</span>
+          <img
+            src="Elegant%20Studio%20Graduation%20Portrait.png"
+            alt="Dianne Osing's graduation portrait"
+            class="portrait"
+          >
+          <div class="portrait-caption">
+            <span>YOUR REMOTE SUPPORT PARTNER</span>
+            <strong>Dianne Osing</strong>
           </div>
         </div>
-        <div class="floating-note note-top"><span class="note-symbol">✳</span><span>People first.<br>Details always.</span></div>
-        <div class="floating-note note-bottom"><span class="note-number">01</span><span>Organized by nature</span></div>
-        <span class="hero-orbit orbit-one"></span>
-        <span class="hero-orbit orbit-two"></span>
+
+        <div class="floating-card">
+          <span class="floating-icon">✳</span>
+          <div>
+            <strong>Details matter.</strong>
+            <span>People matter more.</span>
+          </div>
+        </div>
+
+        <span class="decorative-circle circle-one"></span>
+        <span class="decorative-circle circle-two"></span>
+        <span class="visual-number">01 / 06</span>
       </div>
-      <div class="hero-index">PORTFOLIO / 2026</div>
     </section>
 
-    <div class="ticker">
-      <div class="ticker-track">
-        <span>ADMINISTRATIVE SUPPORT</span><b>✳</b>
-        <span>APPOINTMENT SETTING</span><b>✳</b>
-        <span>CRM COORDINATION</span><b>✳</b>
-        <span>CUSTOMER EXPERIENCE</span><b>✳</b>
-        <span>LEAD FOLLOW-UP</span><b>✳</b>
-        <span>ADMINISTRATIVE SUPPORT</span><b>✳</b>
-        <span>APPOINTMENT SETTING</span><b>✳</b>
-        <span>CRM COORDINATION</span><b>✳</b>
-        <span>CUSTOMER EXPERIENCE</span><b>✳</b>
-        <span>LEAD FOLLOW-UP</span><b>✳</b>
+    <!-- SKILL STRIP -->
+    <div class="skill-strip" aria-label="Areas of expertise">
+      <div class="skill-strip-inner">
+        <span>ADMINISTRATIVE SUPPORT</span><i>✳</i>
+        <span>APPOINTMENT SETTING</span><i>✳</i>
+        <span>CUSTOMER EXPERIENCE</span><i>✳</i>
+        <span>CRM MANAGEMENT</span><i>✳</i>
+        <span>ADMINISTRATIVE SUPPORT</span><i>✳</i>
+        <span>APPOINTMENT SETTING</span><i>✳</i>
+        <span>CUSTOMER EXPERIENCE</span><i>✳</i>
+        <span>CRM MANAGEMENT</span><i>✳</i>
       </div>
     </div>
 
-    <section class="section section-wrap" id="about">
-      <div class="section-kicker"><span>01</span> / A LITTLE ABOUT ME</div>
+    <!-- ABOUT -->
+    <section class="section container" id="about">
+      <div class="section-label">
+        <span>01</span>
+        <span>GET TO KNOW ME</span>
+      </div>
+
       <div class="about-grid">
-        <h2 class="section-heading">Good support is<br><em>felt in the details.</em></h2>
-        <div class="about-copy">
-          <p class="lead">I enjoy helping teams stay organized, keeping communication moving, and making sure the small details don't get lost in a busy day.</p>
-          <p>My background spans real estate administration, B2B appointment setting, customer service, and healthcare and insurance appointment coordination. Across these roles, I've learned to balance clear communication with accurate documentation and dependable follow-through.</p>
-          <div class="signature">Dianne Osing <span>Professional support, with a human touch.</span></div>
+        <div class="about-heading reveal">
+          <h2>A reliable partner for the work <em>behind the scenes.</em></h2>
+          <div class="small-decoration">✳</div>
+        </div>
+
+        <div class="about-copy reveal">
+          <p class="about-lead">
+            I believe good support is more than checking off tasks. It's about creating a smoother experience for clients, teammates, and the people who depend on your work.
+          </p>
+          <p>
+            My experience spans administrative coordination, appointment setting, customer service, B2B outreach, and healthcare and insurance support. I am comfortable handling calls, organizing information, maintaining CRM records, and coordinating schedules with care and accuracy.
+          </p>
+          <p>
+            With my Information Technology background, I am comfortable learning new software, adapting to workflows, and using digital tools to stay organized and productive.
+          </p>
+
+          <div class="about-signature">
+            <span class="signature-mark">D.</span>
+            <span>Thoughtful work. Consistent follow-through.</span>
+          </div>
         </div>
       </div>
-      <div class="principles-grid">
-        <article class="principle-card"><span class="principle-number">01</span><div class="principle-icon">↗</div><h3>Organized</h3><p>Careful with records, calendars, tracking sheets, and the next step.</p></article>
-        <article class="principle-card"><span class="principle-number">02</span><div class="principle-icon">♡</div><h3>People-first</h3><p>Thoughtful communication across calls, email, and client support.</p></article>
-        <article class="principle-card"><span class="principle-number">03</span><div class="principle-icon">⌘</div><h3>Tech-capable</h3><p>Comfortable with CRM platforms, spreadsheets, and digital workflows.</p></article>
-        <article class="principle-card"><span class="principle-number">04</span><div class="principle-icon">✓</div><h3>Consistent</h3><p>Focused on accurate notes, timely follow-ups, and reliable task completion.</p></article>
+
+      <div class="values-grid">
+        <article class="value-card reveal">
+          <span class="value-number">01 /</span>
+          <span class="value-symbol">◎</span>
+          <h3>People First</h3>
+          <p>Clear, respectful communication and a considerate approach to every interaction.</p>
+        </article>
+
+        <article class="value-card reveal">
+          <span class="value-number">02 /</span>
+          <span class="value-symbol">↗</span>
+          <h3>Proactive Support</h3>
+          <p>Consistent follow-ups, organized schedules, and attention to what needs to happen next.</p>
+        </article>
+
+        <article class="value-card reveal">
+          <span class="value-number">03 /</span>
+          <span class="value-symbol">⌘</span>
+          <h3>Digital Confidence</h3>
+          <p>Comfort with CRMs, spreadsheets, productivity tools, and learning new systems.</p>
+        </article>
+
+        <article class="value-card reveal">
+          <span class="value-number">04 /</span>
+          <span class="value-symbol">✳</span>
+          <h3>Reliable Execution</h3>
+          <p>Accurate records, careful documentation, and a steady focus on completing tasks.</p>
+        </article>
       </div>
     </section>
 
+    <!-- EXPERTISE -->
     <section class="section expertise-section" id="expertise">
-      <div class="section-wrap">
-        <div class="section-kicker"><span>02</span> / WHAT I BRING</div>
-        <div class="section-intro-row">
-          <h2 class="section-heading">A versatile skill set.<br><em>One steady approach.</em></h2>
-          <p class="section-intro">I bring together process, communication, and care to help teams serve clients and keep daily operations moving.</p>
+      <div class="container">
+        <div class="section-label">
+          <span>02</span>
+          <span>WHAT I BRING TO THE TABLE</span>
         </div>
+
+        <div class="section-heading-row">
+          <h2>Skills that keep<br>work <em>moving forward.</em></h2>
+          <p>Practical support for the everyday details that help a business run better.</p>
+        </div>
+
         <div class="expertise-grid">
-          <article class="expertise-card">
-            <div class="card-topline"><span>01 / OPERATIONS</span><span>↗</span></div>
-            <div class="expertise-icon">▤</div>
-            <h3>Administrative<br>coordination</h3>
-            <p>CRM updates, spreadsheet maintenance, record organization, team routing, documentation, and internal communication.</p>
-            <div class="tag-row"><span>Follow Up Boss</span><span>Spreadsheets</span><span>Documentation</span></div>
+          <article class="expertise-card reveal">
+            <div class="expertise-top"><span>01</span><span class="expertise-icon">▤</span></div>
+            <h3>Administrative Support</h3>
+            <p>Record keeping, spreadsheet maintenance, email coordination, documentation, and day-to-day administrative assistance.</p>
+            <div class="tag-list"><span>Data Entry</span><span>Documentation</span><span>Email</span></div>
           </article>
-          <article class="expertise-card">
-            <div class="card-topline"><span>02 / COMMUNICATION</span><span>↗</span></div>
-            <div class="expertise-icon">◷</div>
-            <h3>Appointment setting<br>& follow-up</h3>
-            <p>Prospect outreach, appointment scheduling, confirmations, follow-up calls, and clear handoffs to representatives.</p>
-            <div class="tag-row"><span>Outbound calls</span><span>Scheduling</span></div>
+
+          <article class="expertise-card reveal">
+            <div class="expertise-top"><span>02</span><span class="expertise-icon">◷</span></div>
+            <h3>Appointment Setting</h3>
+            <p>Prospect outreach, follow-up calls, appointment scheduling, confirmations, and calendar coordination.</p>
+            <div class="tag-list"><span>Outbound Calls</span><span>Scheduling</span><span>Follow-up</span></div>
           </article>
-          <article class="expertise-card">
-            <div class="card-topline"><span>03 / CLIENT EXPERIENCE</span><span>↗</span></div>
-            <div class="expertise-icon">♡</div>
-            <h3>Customer care<br>& sales support</h3>
-            <p>Account assistance, issue resolution, service explanations, and identifying relevant products or services.</p>
-            <div class="tag-row"><span>Account support</span><span>Upselling</span></div>
+
+          <article class="expertise-card reveal">
+            <div class="expertise-top"><span>03</span><span class="expertise-icon">♡</span></div>
+            <h3>Customer Experience</h3>
+            <p>Customer inquiries, subscription concerns, account support, issue resolution, and thoughtful communication.</p>
+            <div class="tag-list"><span>Problem Solving</span><span>VIP Support</span><span>Sales</span></div>
+          </article>
+
+          <article class="expertise-card reveal">
+            <div class="expertise-top"><span>04</span><span class="expertise-icon">⌘</span></div>
+            <h3>CRM & Lead Management</h3>
+            <p>Updating contact information, maintaining prospect records, tracking follow-ups, and keeping information organized.</p>
+            <div class="tag-list"><span>Follow Up Boss</span><span>CRM Records</span><span>Lead Tracking</span></div>
+          </article>
+
+          <article class="expertise-card reveal">
+            <div class="expertise-top"><span>05</span><span class="expertise-icon">＋</span></div>
+            <h3>Healthcare & Insurance Support</h3>
+            <p>Appointment coordination and customer assistance related to healthcare, Medicare, and insurance consultations.</p>
+            <div class="tag-list"><span>Medicare</span><span>Insurance</span><span>Patient Support</span></div>
+          </article>
+
+          <article class="expertise-card reveal">
+            <div class="expertise-top"><span>06</span><span class="expertise-icon">↗</span></div>
+            <h3>B2B Outreach & Sales</h3>
+            <p>Contacting business prospects, following up on opportunities, qualifying interest, and scheduling sales meetings.</p>
+            <div class="tag-list"><span>Prospecting</span><span>Upselling</span><span>Pipeline Support</span></div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section section-wrap" id="experience">
-      <div class="section-kicker"><span>03</span> / CAREER JOURNEY</div>
-      <div class="section-intro-row">
-        <h2 class="section-heading">Experience built<br><em>around people.</em></h2>
-        <p class="section-intro">A cross-functional background in administration, B2B outreach, customer support, and appointment coordination.</p>
+    <!-- EXPERIENCE -->
+    <section class="section container" id="experience">
+      <div class="section-label">
+        <span>03</span>
+        <span>MY PROFESSIONAL JOURNEY</span>
       </div>
-      <div class="timeline">
-        <article class="experience-item">
-          <div class="experience-date"><span>MAR 2025 — JUL 2026</span><span class="experience-index">01</span></div>
-          <div class="experience-content">
-            <p class="company-label">LPT REALTY</p><h3>Administrative Assistant</h3>
-            <p class="experience-summary">Supporting organized team operations through CRM upkeep, routing information, and accurate administrative tracking.</p>
+
+      <div class="section-heading-row">
+        <h2>Experience built<br>on <em>real work.</em></h2>
+        <p>Roles that have strengthened my communication, organization, customer service, and coordination skills.</p>
+      </div>
+
+      <div class="experience-list">
+        <article class="experience-item reveal">
+          <div class="experience-date">
+            <span>MAR 2025 — JUL 2026</span>
+            <span class="experience-index">01</span>
+          </div>
+          <div class="experience-details">
+            <span class="job-category">REAL ESTATE · ADMINISTRATION</span>
+            <h3>Administrative Assistant</h3>
+            <p class="company-name">LPT Realty</p>
             <ul>
-              <li>Managed CRM information and administrative records in Follow Up Boss, keeping information organized and current.</li>
+              <li>Maintained CRM information and administrative records in Follow Up Boss, helping keep information accurate and up to date.</li>
               <li>Coordinated team routing information, assigned ZIP codes, and service areas according to established guidelines.</li>
-              <li>Maintained tracking spreadsheets and reviewed data to support accurate team assignments and workflows.</li>
-              <li>Communicated with team leads and internal staff through email, Microsoft Teams, and virtual meetings.</li>
+              <li>Maintained tracking spreadsheets and reviewed data supporting team assignments and administrative workflows.</li>
+              <li>Communicated with team leads and staff through email, Microsoft Teams, and virtual meetings.</li>
             </ul>
-            <div class="tag-row"><span>Follow Up Boss</span><span>Data tracking</span><span>Team coordination</span></div>
+            <div class="job-tags"><span>Follow Up Boss</span><span>Spreadsheets</span><span>Team Coordination</span></div>
           </div>
         </article>
-        <article class="experience-item">
-          <div class="experience-date"><span>JAN 2023 — DEC 2024</span><span class="experience-index">02</span></div>
-          <div class="experience-content">
-            <p class="company-label">RESULTSCX</p><h3>Customer Service Representative</h3>
-            <p class="experience-summary">Helping customers navigate account and subscription concerns while identifying relevant sales opportunities.</p>
+
+        <article class="experience-item reveal">
+          <div class="experience-date">
+            <span>JAN 2023 — DEC 2024</span>
+            <span class="experience-index">02</span>
+          </div>
+          <div class="experience-details">
+            <span class="job-category">CUSTOMER SERVICE · SALES</span>
+            <h3>Customer Service Representative</h3>
+            <p class="company-name">ResultsCX</p>
             <ul>
-              <li>Assisted customers with subscription issues, account changes, billing-related questions, and service troubleshooting.</li>
-              <li>Handled customer interactions professionally and recommended relevant products, plans, and subscription services.</li>
+              <li>Assisted customers with subscription concerns, account changes, billing questions, and troubleshooting in a satellite radio account.</li>
+              <li>Managed VIP account concerns and worked toward resolving customer issues while providing clear explanations.</li>
+              <li>Recommended and sold relevant products, plans, or subscriptions based on customer needs.</li>
               <li>Maintained accurate account information and documented customer concerns, resolutions, and sales activities.</li>
             </ul>
-            <div class="tag-row"><span>Customer care</span><span>Problem resolution</span><span>Sales support</span></div>
+            <div class="job-tags"><span>VIP Account Support</span><span>Issue Resolution</span><span>Sales</span></div>
           </div>
         </article>
-        <article class="experience-item">
-          <div class="experience-date"><span>JUL 2022 — JAN 2023</span><span class="experience-index">03</span></div>
-          <div class="experience-content">
-            <p class="company-label">HAULLA CORPORATION</p><h3>B2B Inside Sales Agent / Appointment Setter</h3>
-            <p class="experience-summary">Connecting with business prospects and coordinating qualified appointments for commercial waste collection services.</p>
+
+        <article class="experience-item reveal">
+          <div class="experience-date">
+            <span>JUL 2022 — JAN 2023</span>
+            <span class="experience-index">03</span>
+          </div>
+          <div class="experience-details">
+            <span class="job-category">B2B SALES · APPOINTMENT SETTING</span>
+            <h3>B2B Inside Sales Agent / Appointment Setter</h3>
+            <p class="company-name">Haulla Corporation</p>
             <ul>
-              <li>Contacted prospective business customers to introduce services and identify potential opportunities.</li>
-              <li>Scheduled appointments between qualified prospects and sales representatives, maintaining accurate appointment details.</li>
-              <li>Conducted follow-up calls and managed daily outreach to maintain an active prospect pipeline.</li>
-              <li>Updated CRM records and coordinated service-related details with prospects and internal teams.</li>
+              <li>Contacted prospective business customers about commercial waste collection services.</li>
+              <li>Scheduled qualified prospects for meetings with sales representatives.</li>
+              <li>Conducted follow-up calls and daily outreach to maintain an active prospect pipeline.</li>
+              <li>Updated CRM records and coordinated relevant customer and service details.</li>
             </ul>
-            <div class="tag-row"><span>B2B outreach</span><span>Lead follow-up</span><span>CRM updates</span></div>
+            <div class="job-tags"><span>Outbound Sales</span><span>Lead Follow-up</span><span>CRM</span></div>
           </div>
         </article>
-        <article class="experience-item">
-          <div class="experience-date"><span>DEC 2020 — JUN 2022</span><span class="experience-index">04</span></div>
-          <div class="experience-content">
-            <p class="company-label">ETHOS LIFE</p><h3>Appointment Setter, Life Insurance & Medicare</h3>
-            <p class="experience-summary">Coordinating insurance and healthcare consultations with U.S. veterans, retired military personnel, and licensed representatives.</p>
+
+        <article class="experience-item reveal">
+          <div class="experience-date">
+            <span>DEC 2020 — JUN 2022</span>
+            <span class="experience-index">04</span>
+          </div>
+          <div class="experience-details">
+            <span class="job-category">INSURANCE · APPOINTMENT SETTING</span>
+            <h3>Appointment Setter — Life Insurance & Medicare</h3>
+            <p class="company-name">Ethos Life</p>
             <ul>
-              <li>Contacted prospects regarding Medicare, supplemental healthcare, and life insurance consultations.</li>
-              <li>Scheduled and confirmed appointments between qualified prospects and licensed insurance representatives.</li>
-              <li>Explained basic information about benefits, plans, eligibility, and consultation processes.</li>
-              <li>Maintained accurate customer information and appointment records while handling sensitive conversations professionally.</li>
+              <li>Contacted US veterans and retired military personnel regarding Medicare, supplemental healthcare, and life insurance consultations.</li>
+              <li>Scheduled and confirmed appointments with licensed representatives.</li>
+              <li>Provided basic information about benefits, plans, eligibility, and consultation processes.</li>
+              <li>Maintained accurate customer and appointment records while handling sensitive conversations with care.</li>
             </ul>
-            <div class="tag-row"><span>Appointment coordination</span><span>Insurance support</span><span>Client records</span></div>
+            <div class="job-tags"><span>Medicare</span><span>Client Communication</span><span>Scheduling</span></div>
           </div>
         </article>
       </div>
     </section>
 
+    <!-- WORK SAMPLES -->
     <section class="section samples-section" id="samples">
-      <div class="section-wrap">
-        <div class="section-kicker"><span>04</span> / SELECTED WORK</div>
-        <div class="section-intro-row">
-          <h2 class="section-heading">How I approach<br><em>the everyday.</em></h2>
-          <p class="section-intro">Illustrative practice samples showing how I structure routine support tasks. These are examples, not confidential client work or claims of past deliverables.</p>
+      <div class="container">
+        <div class="section-label">
+          <span>04</span>
+          <span>HOW I APPROACH MY WORK</span>
         </div>
+
+        <div class="section-heading-row">
+          <h2>Good systems.<br><em>Clear communication.</em></h2>
+          <p>Illustrative practice samples showing how I approach everyday administrative and coordination tasks. These are examples, not client deliverables.</p>
+        </div>
+
         <div class="samples-grid">
-          <article class="sample-card">
-            <div class="sample-visual workflow-visual">
-              <div class="mini-window">
-                <div class="mini-window-bar"><i></i><i></i><i></i><span>LEAD FOLLOW-UP FLOW</span></div>
-                <div class="flow-step"><b>01</b><span>New inquiry received</span><em>→</em></div>
-                <div class="flow-step"><b>02</b><span>Record details in CRM</span><em>→</em></div>
-                <div class="flow-step"><b>03</b><span>Follow up & qualify</span><em>→</em></div>
-                <div class="flow-step"><b>04</b><span>Confirm next action</span><em>✓</em></div>
+          <article class="sample-card reveal">
+            <div class="sample-art">
+              <div class="workflow-box">
+                <div class="mock-window-head"><i></i><i></i><i></i><span>LEAD FOLLOW-UP</span></div>
+                <div class="workflow-step"><b>01</b><span>New inquiry received</span></div>
+                <div class="workflow-connector"></div>
+                <div class="workflow-step"><b>02</b><span>Contact and qualify</span></div>
+                <div class="workflow-connector"></div>
+                <div class="workflow-step workflow-highlight"><b>03</b><span>Schedule next step</span></div>
               </div>
             </div>
-            <div class="sample-info"><span class="sample-type">SAMPLE 01 / CRM</span><h3>Lead follow-up workflow</h3><p>A simple process for capturing inquiry details, tracking outreach, and documenting the next action.</p></div>
+            <div class="sample-copy">
+              <span class="sample-label">PRACTICE SAMPLE 01</span>
+              <h3>Lead Follow-up Workflow</h3>
+              <p>A simple process for organizing inquiries, tracking contact attempts, and recording the next action.</p>
+            </div>
           </article>
-          <article class="sample-card">
-            <div class="sample-visual calendar-visual">
-              <div class="calendar-card">
-                <div class="calendar-head"><div><small>WEEKLY OVERVIEW</small><strong>Appointment planner</strong></div><span>↗</span></div>
-                <div class="calendar-days"><span>MON</span><span>TUE</span><span>WED</span><span>THU</span><span>FRI</span></div>
-                <div class="calendar-slots"><span></span><span class="slot-filled"></span><span></span><span class="slot-filled slot-green"></span><span></span></div>
-                <div class="calendar-slots"><span class="slot-filled slot-peach"></span><span></span><span class="slot-filled"></span><span></span><span class="slot-filled slot-green"></span></div>
-                <div class="calendar-legend"><i></i> Confirmed <i class="peach-dot"></i> Follow-up needed</div>
+
+          <article class="sample-card reveal">
+            <div class="sample-art">
+              <div class="mock-calendar">
+                <div class="calendar-heading"><span>Appointment Tracker</span><b>✓</b></div>
+                <div class="calendar-columns"><span>MON</span><span>TUE</span><span>WED</span><span>THU</span><span>FRI</span></div>
+                <div class="calendar-grid">
+                  <i></i><i class="filled"></i><i></i><i></i><i class="filled"></i>
+                  <i class="soft-filled"></i><i></i><i class="filled"></i><i></i><i></i>
+                  <i></i><i class="filled"></i><i></i><i class="soft-filled"></i><i></i>
+                </div>
+                <div class="calendar-status"><span></span> Confirmed <span></span> Follow-up</div>
               </div>
             </div>
-            <div class="sample-info"><span class="sample-type">SAMPLE 02 / SCHEDULING</span><h3>Appointment tracking</h3><p>A mock weekly view for monitoring confirmations, follow-ups, and scheduling details at a glance.</p></div>
+            <div class="sample-copy">
+              <span class="sample-label">PRACTICE SAMPLE 02</span>
+              <h3>Appointment Tracking</h3>
+              <p>A sample scheduling overview designed to make confirmations and follow-up actions easy to review.</p>
+            </div>
           </article>
-          <article class="sample-card">
-            <div class="sample-visual email-visual">
-              <div class="email-card">
-                <div class="email-label">EMAIL DRAFT</div>
-                <div class="email-line email-short"></div><div class="email-line"></div><div class="email-line email-medium"></div>
-                <div class="email-gap"></div><div class="email-line"></div><div class="email-line email-medium"></div>
-                <div class="email-signoff">Thank you,<br><strong>Support Team</strong></div>
+
+          <article class="sample-card reveal">
+            <div class="sample-art">
+              <div class="mock-email">
+                <div class="mock-email-top"><span>EMAIL DRAFT</span><span>↗</span></div>
+                <div class="mock-email-field"><b>To</b><span>Client / Prospect</span></div>
+                <div class="mock-email-field"><b>Subject</b><span>Appointment Confirmation</span></div>
+                <div class="mock-email-divider"></div>
+                <div class="email-lines"><i></i><i></i><i class="line-short"></i></div>
+                <div class="email-highlight">Thank you for your time.</div>
+                <div class="email-lines"><i></i><i class="line-medium"></i></div>
               </div>
             </div>
-            <div class="sample-info"><span class="sample-type">SAMPLE 03 / COMMUNICATION</span><h3>Client confirmation email</h3><p>A concise, courteous message format for confirming appointments and clarifying the next steps.</p></div>
+            <div class="sample-copy">
+              <span class="sample-label">PRACTICE SAMPLE 03</span>
+              <h3>Client Confirmation Email</h3>
+              <p>A sample message structure for confirming details and helping clients know what to expect next.</p>
+            </div>
           </article>
         </div>
       </div>
     </section>
 
-    <section class="section section-wrap" id="toolkit">
-      <div class="section-kicker"><span>05</span> / TOOLS & CAPABILITIES</div>
+    <!-- TOOLS -->
+    <section class="section container" id="tools">
+      <div class="section-label">
+        <span>05</span>
+        <span>MY DIGITAL TOOLKIT</span>
+      </div>
+
       <div class="toolkit-layout">
-        <div><h2 class="section-heading">Comfortable with tools.<br><em>Focused on outcomes.</em></h2><p class="toolkit-copy">I adapt to established processes and new systems, with a focus on keeping information clear, accurate, and useful.</p></div>
-        <div class="toolkit-groups">
-          <div class="toolkit-group"><span class="toolkit-label">OFFICE & COLLABORATION</span><div class="tool-pills"><span>Microsoft Office</span><span>Excel</span><span>Google Workspace</span><span>Google Sheets</span><span>Microsoft Teams</span><span>Zoom</span></div></div>
-          <div class="toolkit-group"><span class="toolkit-label">CRM & COMMUNICATION</span><div class="tool-pills"><span>Follow Up Boss</span><span>CRM record management</span><span>Email communication</span><span>Lead tracking</span></div></div>
-          <div class="toolkit-group"><span class="toolkit-label">CORE COMPETENCIES</span><div class="tool-pills"><span>Administrative support</span><span>Appointment setting</span><span>B2B sales</span><span>Customer service</span><span>Calendar coordination</span><span>Data entry</span><span>Documentation</span><span>Inbound & outbound calls</span><span>Problem resolution</span><span>Healthcare & insurance support</span></div></div>
+        <div class="toolkit-intro reveal">
+          <h2>Tools that help me work <em>smarter.</em></h2>
+          <p>I use digital systems to keep information accessible, communication organized, and workflows moving. I'm also comfortable learning tools specific to a team's processes.</p>
         </div>
-      </div>
-    </section>
 
-    <section class="section education-section" id="education">
-      <div class="section-wrap">
-        <div class="section-kicker"><span>06</span> / EDUCATION</div>
-        <div class="education-grid">
-          <h2 class="section-heading">A foundation in<br><em>technology.</em></h2>
-          <div class="education-list">
-            <article class="education-item"><span class="education-years">2022 — 2026</span><div><h3>Batangas State University — Lipa City</h3><p>Bachelor of Science in Information Technology</p></div><span class="education-mark">↗</span></article>
-            <article class="education-item"><span class="education-years">2020 — 2022</span><div><h3>STI College Lipa</h3><p>Science, Technology, Engineering and Mathematics (STEM)</p></div><span class="education-mark">↗</span></article>
+        <div class="tool-groups reveal">
+          <div class="tool-group">
+            <span class="tool-category">CRM & CLIENT MANAGEMENT</span>
+            <div class="tool-chips"><span>Follow Up Boss</span><span>HubSpot</span><span>GoHighLevel</span></div>
+          </div>
+          <div class="tool-group">
+            <span class="tool-category">COMMUNICATION & PRODUCTIVITY</span>
+            <div class="tool-chips"><span>Microsoft Teams</span><span>Email</span><span>Calendars</span><span>Spreadsheets</span></div>
+          </div>
+          <div class="tool-group">
+            <span class="tool-category">MARKETING & WORKFLOWS</span>
+            <div class="tool-chips"><span>Mailchimp</span><span>Klaviyo</span></div>
+          </div>
+          <div class="tool-group">
+            <span class="tool-category">BUSINESS ADMINISTRATION</span>
+            <div class="tool-chips"><span>QuickBooks Online</span><span>Data Entry</span><span>Documentation</span></div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="contact-section" id="contact">
-      <div class="section-wrap contact-inner">
-        <div class="section-kicker"><span>07</span> / THE NEXT STEP</div>
-        <p class="contact-overline">LOOKING FOR A RELIABLE TEAMMATE?</p>
-        <h2>Let's make your<br><em>workday lighter.</em></h2>
-        <p class="contact-copy">If you're looking for thoughtful administrative support, consistent follow-up, or a people-first approach to client operations, I'd love to connect.</p>
-        <a class="button button-light" href="mailto:osingladydianne@gmail.com">Start a conversation ↗</a>
-        <div class="contact-details">
-          <a href="mailto:osingladydianne@gmail.com">osingladydianne@gmail.com</a>
-          <a href="tel:+639931436894">+63 993 143 6894</a>
-          <span>Batangas, Philippines</span>
+    <!-- EDUCATION -->
+    <section class="section education-section" id="education">
+      <div class="container">
+        <div class="section-label">
+          <span>06</span>
+          <span>EDUCATION & BACKGROUND</span>
+        </div>
+
+        <div class="education-layout">
+          <div class="education-intro reveal">
+            <h2>A foundation in technology and <em>continuous learning.</em></h2>
+            <p>My academic background in Information Technology supports my confidence with software, digital systems, and adapting to new tools.</p>
+            <div class="education-seal">D<span>.</span></div>
+          </div>
+
+          <div class="education-list reveal">
+            <article class="education-item">
+              <span class="education-period">2022 — 2026</span>
+              <div>
+                <h3>Bachelor of Science in Information Technology</h3>
+                <p>Batangas State University — Lipa City</p>
+              </div>
+              <span class="education-symbol">↗</span>
+            </article>
+
+            <article class="education-item">
+              <span class="education-period">2020 — 2022</span>
+              <div>
+                <h3>Science, Technology, Engineering & Mathematics</h3>
+                <p>STI College Lipa · High Honor</p>
+              </div>
+              <span class="education-symbol">↗</span>
+            </article>
+          </div>
         </div>
       </div>
-      <div class="contact-watermark">DO.</div>
+    </section>
+
+    <!-- CONTACT -->
+    <section class="contact-section" id="contact">
+      <div class="contact-decoration contact-decoration-one"></div>
+      <div class="contact-decoration contact-decoration-two"></div>
+
+      <div class="container contact-layout">
+        <div class="contact-copy reveal">
+          <span class="contact-eyebrow">HAVE A ROLE IN MIND?</span>
+          <h2>Let's make work feel <em>more manageable.</em></h2>
+          <p>If you need dependable support with administrative tasks, client communication, appointment setting, or CRM organization, I'd love to hear from you.</p>
+          <a class="button button-light" href="mailto:osingladydianne@gmail.com">Start a Conversation <span>↗</span></a>
+        </div>
+
+        <div class="contact-details reveal">
+          <div class="contact-detail">
+            <span>EMAIL</span>
+            <a href="mailto:osingladydianne@gmail.com">osingladydianne@gmail.com</a>
+          </div>
+          <div class="contact-detail">
+            <span>PHONE</span>
+            <a href="tel:+639931436894">+63 993 143 6894</a>
+          </div>
+          <div class="contact-detail">
+            <span>LOCATION</span>
+            <p>Batangas, Philippines</p>
+          </div>
+          <div class="contact-detail">
+            <span>WORK PREFERENCE</span>
+            <p>Remote · Virtual Assistance</p>
+          </div>
+        </div>
+      </div>
+
+      <div class="contact-watermark" aria-hidden="true">D.</div>
     </section>
   </main>
 
-  <footer class="site-footer">
-    <a class="wordmark" href="#home">DO<span>.</span></a>
-    <p>Made with intention by Lady Dianne Osing.</p>
-    <a href="#home">Back to top ↑</a>
-    <span>© <span id="year">2026</span></span>
+  <footer class="footer">
+    <a href="#home" class="footer-logo">D.</a>
+    <p>© <span id="current-year"></span> Dianne Osing. Built with care.</p>
+    <a href="#home" class="back-to-top">BACK TO TOP ↑</a>
   </footer>
 
   <script>
-    const menuToggle = document.querySelector('.menu-toggle');
-    const mobileNav = document.querySelector('.mobile-nav');
+    // Mobile navigation
+    const menuToggle = document.getElementById("menu-toggle");
+    const navLinks = document.getElementById("nav-links");
 
-    menuToggle.addEventListener('click', () => {
-      const isOpen = menuToggle.getAttribute('aria-expanded') === 'true';
-      menuToggle.setAttribute('aria-expanded', String(!isOpen));
-      menuToggle.setAttribute('aria-label', isOpen ? 'Open navigation' : 'Close navigation');
-      mobileNav.classList.toggle('is-open', !isOpen);
-      document.body.classList.toggle('menu-open', !isOpen);
+    menuToggle.addEventListener("click", () => {
+      const isOpen = menuToggle.getAttribute("aria-expanded") === "true";
+      menuToggle.setAttribute("aria-expanded", String(!isOpen));
+      menuToggle.setAttribute(
+        "aria-label",
+        isOpen ? "Open navigation menu" : "Close navigation menu"
+      );
+      navLinks.classList.toggle("nav-open", !isOpen);
     });
 
-    mobileNav.querySelectorAll('a').forEach(link => {
-      link.addEventListener('click', () => {
-        menuToggle.setAttribute('aria-expanded', 'false');
-        menuToggle.setAttribute('aria-label', 'Open navigation');
-        mobileNav.classList.remove('is-open');
-        document.body.classList.remove('menu-open');
+    navLinks.querySelectorAll("a").forEach((link) => {
+      link.addEventListener("click", () => {
+        menuToggle.setAttribute("aria-expanded", "false");
+        menuToggle.setAttribute("aria-label", "Open navigation menu");
+        navLinks.classList.remove("nav-open");
       });
     });
 
-    document.getElementById('year').textContent = new Date().getFullYear();
+    // Current year
+    document.getElementById("current-year").textContent =
+      new Date().getFullYear();
 
-    const revealObserver = new IntersectionObserver(entries => {
-      entries.forEach(entry => {
-        if (entry.isIntersecting) {
-          entry.target.classList.add('is-visible');
-          revealObserver.unobserve(entry.target);
-        }
-      });
-    }, { threshold: 0.12 });
+    // Scroll reveal animations
+    const revealItems = document.querySelectorAll(".reveal");
 
-    document.querySelectorAll('.reveal, .principle-card, .expertise-card, .experience-item, .sample-card').forEach(element => {
-      element.classList.add('will-reveal');
-      revealObserver.observe(element);
-    });
+    if ("IntersectionObserver" in window) {
+      const revealObserver = new IntersectionObserver(
+        (entries, observer) => {
+          entries.forEach((entry) => {
+            if (entry.isIntersecting) {
+              entry.target.classList.add("visible");
+              observer.unobserve(entry.target);
+            }
+          });
+        },
+        { threshold: 0.12 }
+      );
+
+      revealItems.forEach((item) => revealObserver.observe(item));
+    } else {
+      revealItems.forEach((item) => item.classList.add("visible"));
+    }
   </script>
 </body>
 </html>
